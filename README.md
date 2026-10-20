@@ -8,6 +8,12 @@ This is a custom ComfyUI post-processing node that blends a short H3 frame burst
 
 > **Versions**: release **v1.0.0**, ImageFusion core **v0.3.1**. This repository contains the node source and the example ComfyUI workflow, **not** the MiniMax H3 model weights or NEAT Prime weights.
 
+## 演示视频 / Demo Video
+
+🎬 [Bilibili 演示：H3 Image 14MP 超清实测、ImageFusion 节点与工作流开源](https://www.bilibili.com/video/BV1hwnw6GEmz)
+
+观看实际生图效果及工作流演示。Watch the H3 Image + NEAT ImageFusion demo and workflow showcase.
+
 ## 功能 / Features
 
 - 以第 1 帧为结构锚点，后续帧提供冗余信息 (anchor-first fusion).
