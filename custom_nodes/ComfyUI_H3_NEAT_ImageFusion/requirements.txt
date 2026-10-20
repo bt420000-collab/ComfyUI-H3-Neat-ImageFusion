@@ -1,0 +1,2 @@
+# No forced pip install: most ComfyUI builds already provide torch/numpy/OpenCV.
+# If cv2 is missing in your environment, install an OpenCV package compatible with your ComfyUI Python.
