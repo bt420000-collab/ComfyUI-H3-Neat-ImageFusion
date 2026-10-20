@@ -25,6 +25,18 @@ This is a custom ComfyUI post-processing node that blends a short H3 frame burst
 
 > **注意 / Important**: 提供的**完整示例工作流**还依赖 MiniMax H3 / H3 NEAT Prime 的模型与自定义节点，以及 **DMAD** sampler 节点。仅安装 ImageFusion 文件夹，只能提供融合节点，不能自动让整个 H3 生成工作流运行。模型名称和安装路径需要根据你的环境调整。The workflow depends on external H3 and DMAD nodes and model files; these are not bundled here.
 
+## LoRA 模型下载 / Model weights
+
+**H3 Turbo Neat (Neat Classic / Neat Prime)**：
+[Hugging Face · moe-kill/H3-Turbo-Neat](https://huggingface.co/moe-kill/H3-Turbo-Neat)
+
+- **Neat Prime**：`H3_Neat_Prime_v0.1.safetensors`，本仓库附带的 H3 Image Mode 示例工作流使用的 LoRA 分支。建议使用对应的 **DMAD re-noise** 采样配置。
+- **Neat Classic**：`H3Turbo_4Step_Neat_v1.safetensors`，是另一套独立的 LoRA / 采样工作流，不要与 Prime 混用。
+
+**说明**：本 GitHub 仓库提供 **ImageFusion 多帧融合节点与示例工作流**；Hugging Face 仓库提供 **Neat 系列 LoRA 模型与相关发布文件**。ImageFusion 是生成之后的后处理节点，单独使用融合节点并不要求安装 Neat LoRA；运行这里提供的完整 H3 生图工作流则必须自行安装所需模型及 H3 / DMAD 依赖。
+
+**English:** Download Neat LoRA weights from [H3 Turbo Neat on Hugging Face](https://huggingface.co/moe-kill/H3-Turbo-Neat). The fusion node itself is a post-processing component and does not require a LoRA, but the bundled H3 Neat Prime example workflow needs the matching model weights and DMAD dependencies. Do not mix Classic and Prime sampling workflows.
+
 ## 建议参数 / Reference settings
 
 | 参数 | 参考值 |
